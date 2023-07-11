@@ -21,29 +21,31 @@ ul {
 }
 
 .Container {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
 	height: 100vh;
 	background-color: #14430d;
+	display: grid;
+	grid-template-rows: 55px 1fr;
+	grid-template-areas: "Title" "Content";
 }
 
 .Title {
-	height: 50px;
-	width: 100vw;
+	grid-area: Title;
+}
+
+.Content {
+	grid-area: Content;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "Picture" "Instructions";
 }
 
 .Picture {
-	margin-top: 50px;
-	width: 50vw;
-	height: 100vh;
+	grid-area: Picture;
 	background-color: blue;
 }
 
 .Instructions {
-	margin-top: 50px;
-	margin-left: 50vw;
-	width: 50vw;
+	grid-area: Instructions;
 	background-color: red;
-	align-items: top;
+	align-self: start;
 }
