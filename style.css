@@ -24,28 +24,23 @@ ul {
 	height: 100vh;
 	background-color: #14430d;
 	display: grid;
-	grid-template-rows: 55px 1fr;
-	grid-template-areas: "Title" "Content";
+	grid-template-rows: 55px auto;
 }
 
 .Title {
-	grid-area: Title;
+	color: black;
 }
 
 .Content {
-	grid-area: Content;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "Picture" "Instructions";
+	grid-template-columns: auto auto;
 }
 
 .Picture {
-	grid-area: Picture;
 	background-color: blue;
 }
 
 .Instructions {
-	grid-area: Instructions;
 	background-color: red;
 	align-self: start;
 }
