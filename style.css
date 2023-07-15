@@ -31,6 +31,16 @@ ul {
 	color: black;
 }
 
+.Main-Menu {
+	padding: 15px 25px;
+}
+
+.Main-Menu p {
+	margin: 10px auto;
+	padding: 10px;
+	background-color: #338327;
+}
+
 .Content {
 	display: grid;
 	grid-template-columns: auto auto;
